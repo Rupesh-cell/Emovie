@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Loginn from "./pages/Loginn";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
           <Route exact path="/home" element={<Home />} />
           <Route exact path="/register" element={<Register />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
